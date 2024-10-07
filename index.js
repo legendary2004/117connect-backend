@@ -177,6 +177,7 @@ app.post("/contact", (req, res) => {
         Name - ${firstName} ${lastName}
         Company - ${company}
         Phone - ${phone}
+        Email  - ${email}
     `, res)
     sendEmail(process.env.email, email, "Message recieved", "Hello user. Thank you for reaching us out. One of our team members will reach out to you soon.", res)
 })
