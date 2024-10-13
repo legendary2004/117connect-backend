@@ -2,7 +2,7 @@ import multer from "multer";
 import path from "path";
 
 const profileStorage = multer.diskStorage({
-    destination: path.join("../src/images/admin"),
+    destination: path.join("./images"),
     filename: function (req, file, cb) {
         cb(null, Date.now() + path.extname(file.originalname));
     },
